@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Comic Maker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Comic Maker</h1>
+
+    <div id="strip">
+      <div class="box">
+        <p class="text" id="textBubble1">...</p>
+        <img src="spider-man.png" id="character1" />
+      </div>
+
+      <div class="box">
+        <p class="text" id="textBubble2">...</p>
+        <img src="wolverine.png" id="character2" />
+      </div>
+
+      <div class="box">
+        <p class="text" id="textBubble3">...</p>
+        <img src="spider-man.png" id="character3" />
+      </div>
+    </div>
+
+    <div id="sidePanel">
+      <p>Type text and click a text bubble:</p>
+      <input type="text" id="textBox" />
+
+      <p>Select opacity and click a character:</p>
+      <input type="range" min="0" max="100" value="100" id="opacitySlider" />
+
+      <p>Select rotation and click a character:</p>
+      <input type="range" min="0" max="359" value="0" id="rotationSlider" />
+    </div>
+  </body>
+</html>
